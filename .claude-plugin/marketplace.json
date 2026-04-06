@@ -2,7 +2,7 @@
   "name": "harness-marketplace",
   "owner": {
     "name": "revfactory",
-    "email": "",
+    "email": "placeholder@example.com",
     "url": "https://github.com/revfactory"
   },
   "plugins": [
