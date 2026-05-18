@@ -58,20 +58,6 @@ Harness lives at the **L3 Meta-Factory** layer of the Claude Code ecosystem — 
 - **Orchestration** — Inter-agent data passing, error handling, and team coordination protocols
 - **Validation** — Trigger verification, dry-run testing, and with-skill vs without-skill comparison tests
 
-## Harness Evolution Mechanism
-
-The harness evolution mechanism feeds deltas (what worked / what didn't) back into the factory, so the next generation is measurably better. When a generated harness is used in a real project, the `/harness:evolve` skill captures the delta between the initial architecture and the shipped one, and feeds it back into the factory so the next generation for a similar domain starts closer to the shipped state.
-
-```
-Initial harness ──▶ Real project use ──▶ Shipped harness
-                                              │
-                                              ▼ (delta capture via /harness:evolve)
-                                        ┌───────────────┐
-                                        │  Factory      │◀── better next-gen draft
-                                        └───────────────┘
-```
-
-We call this the **Harness Evolution Mechanism** (KR: 하네스 진화 메커니즘; JA: ハーネス進化メカニズム).
 
 ## Workflow
 
